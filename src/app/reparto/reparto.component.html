@@ -1,2 +1,2 @@
 
-<div *ngIf="peli"><p>{{pelicula.actores}} </p></div>
+<div *ngIf="peli"><p *ngFor="let peli of peliculas">{{peli.actores}} </p></div>
