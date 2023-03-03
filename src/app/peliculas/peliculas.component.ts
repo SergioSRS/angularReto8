@@ -12,6 +12,7 @@ import { IDBService } from '../idb.service';
 export class PeliculasComponent {
  pelicula: String = "";
  peliculas: Pelicula[] =[];
+ selectedPeli?:Pelicula
   constructor(private ayax: AyaxService, public idb: IDBService){
     
   };
@@ -26,6 +27,9 @@ export class PeliculasComponent {
    
     /*this.peliculas=PELICULAS;
     console.log(this.peliculas)*/
+  }
+  onSelect(peli:Pelicula):void{
+    this.selectedPeli = peli;
   }
   ngOnInit(): void {
     this.mostrarPeliculas()

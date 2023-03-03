@@ -2,9 +2,11 @@
 <input id="name" type="text" [(ngModel)]="pelicula" placeholder="nombre">
 <button  (click)="mostrarPeliculas()">Enviar</button>
 <app-mensajes></app-mensajes>
-    <div *ngFor="let peli of peliculas">
-        <h2 >{{peli.titulo}}</h2>
+    <div  *ngFor="let peli of peliculas">
+        <h2 (click)="onSelect(peli)" >{{peli.titulo}}</h2>
         <img class="imagen" src="{{peli.imagen}}">
-        <button (click)="anadirFavoritos(peli)">⭐</button>
+        <button (click)="anadirFavoritos(peli)">⭐</button>   
+        <app-reparto [peli]="selectedPeli"></app-reparto>   
     </div>
+
 

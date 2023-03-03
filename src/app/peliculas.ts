@@ -3,4 +3,5 @@ export interface Pelicula{
     imagen:File|null;
     titulo:string;
     descripcion:string;
+    actores:string[];
 }

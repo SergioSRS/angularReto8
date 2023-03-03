@@ -9,6 +9,7 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
 import { FavoritasComponent } from './favoritas/favoritas.component';
 import { CreditosComponent } from './creditos/creditos.component';
 import { MensajesComponent } from './mensajes/mensajes.component';
+import { RepartoComponent } from './reparto/reparto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MensajesComponent } from './mensajes/mensajes.component';
     PeliculasComponent,
     FavoritasComponent,
     CreditosComponent,
-    MensajesComponent
+    MensajesComponent,
+    RepartoComponent
   ],
   imports: [
     BrowserModule,
